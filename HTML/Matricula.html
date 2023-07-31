@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula</title>
+    <!-- CSS 08:11 --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!--JS-->
+    <script src="/JavaScript/Matricula.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="consulta mt6">
+             <div class="row">
+                   <div class="col-6">
+                       <h3>
+                          LISTA MATRICULAS
+                       </h3>
+                   </div>
+                  
+                   <a href="../Home.html"><input type="button" class="btn btn-info" value=" Atras"></a>
+
+
+                   <div class="box-body">
+                       <div class="table table-responsive">
+                            <table class="table table-hover">
+                                <table class="table table-info">
+                                 <thead>
+                                      <tr>
+                                          <th>Codigo Matricula</th>
+                                          <th>Nombre Asignatura</th>
+                                          <th>N° Alumno</th>
+                                          <th>Fecha Matricula</th>
+                                          <th>N° Docente</th>
+                                          <th>Carrera</th>
+                                          <th>N° Edificio</th>
+                                      </tr>
+                                 </thead>
+                                 <tbody id="DatosMatriculas">
+
+                                      
+                                     
+
+                                 </tbody>
+                              </table>
+                       </div>
+
+                   </div>
+             </div>
+
+        </div>
+        
+        <div id="Formulario" class="Formulario mt6">
+            <div class="rows">
+                 <div class="col-12">
+                       <h3>
+                           Agregar Matricula
+                       </h3>
+
+                 </div>
+             </div>
+             <div class="col-12">
+                  <form id="Miformulario" class = "Matricula">
+                      <label for="">Codigo Matricula</label>
+                      <input type="text" id="codmatricula" class="form-control" placeholder="Ingrese el codigo de matricula">
+
+                      <label for="">Nombre Asignatura</label>
+                      <input type="text" id="nomasignatura" class="form-control" placeholder="Ingrese la asignatura">
+
+                      <label for="">N° Alumno</label>
+                      <input type="text" id="numalumno" class="form-control" placeholder="Ingrese numero de alumno">
+
+                      <label for="">Fecha Matricula</label>
+                       <input type="text" id="fechamatricula" class="form-control" placeholder="Ingrese la fecha de matricula">
+
+                      <label for="">N° Docente</label>
+                      <input type="text" id="numdocente" class="form-control" placeholder="Ingrese numero del docente">
+
+                      <label for="">Carrera</label>
+                      <input type="text" id="carrera" class="form-control" placeholder="Ingrese la Carrera">
+
+                      <label for="">N° Edificio</label>
+                      <input type="text" id="numedificio" class="form-control" placeholder="Ingrese La Altura">
+                      <hr>
+                      <div id="btnagregarmatricula">
+                       <input type="button" value="Agregar Matricula" class="btn btn-success" id= "btnagregar" onclick=" AgregarMatricula()">
+                      </div>
+                      
+
+                       
+                      
+                      
+                      
+                  </form>
+             </div>
+
+        </div>
+
+   </div>
+
+
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
