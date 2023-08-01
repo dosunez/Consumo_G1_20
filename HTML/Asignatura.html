@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignatura</title>
+    <!-- CSS 08:11 --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!--JS-->
+    <script src="/JavaScript/Asignatura.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="consulta mt6">
+             <div class="row">
+                   <div class="col-6">
+                       <h3>
+                          Lista de Asignatura
+                       </h3>
+                   </div>
+                  
+                   <a href="../Home.html"><input type="button" class="btn btn-info" value=" Atras"></a>
+
+
+                   <div class="box-body">
+                       <div class="table table-responsive">
+                            <table class="table table-hover">
+                                 <thead>
+                                      <tr>
+                                          <th>codigo asignatura</th>
+                                          <th>nombre asignatura</th>
+                                          <th>carrera</th>
+                                          <th>fecha creacion</th>
+                                          <th>unidades valorativas</th>
+                                          <th>promedio aprobacion</th>
+                                          <th>numero edificio</th>
+                                      </tr>
+                                 </thead>
+                                 <tbody id="DatosAsignatura">
+
+                                      
+                                     
+
+                                 </tbody>
+                              </table>
+                       </div>
+
+                   </div>
+             </div>
+
+
+
+        </div>
+
+
+        
+        <div id="Formulario" class="Formulario mt6">
+            <div class="rows">
+                 <div class="col-12">
+                       <h3>
+                           Agregar Asignatura
+                       </h3>
+
+                 </div>
+             </div>
+             <div class="col-12">
+                  <form id="Miformulario" class = "Asignatura">
+                      <label for="">codigo asignatura</label>
+                      <input type="text" id="codigoasignatura" class="form-control" placeholder="Ingrese el codigo asignatura">
+
+                      <label for="">nombre asignatura</label>
+                      <input type="text" id="nombreasignatura" class="form-control" placeholder="Ingrese el Nombre asignatura">
+
+                      <label for="">carrera</label>
+                      <input type="text" id="carrera" class="form-control" placeholder="Ingrese la carrera">
+
+                      <label for="">fecha creacion</label>
+                       <input type="text" id="fechacreacion" class="form-control" placeholder="Ingrese la fecha creacion">
+
+                      <label for="">unidades valorativas</label>
+                      <input type="text" id="unidadesvalortivas" class="form-control" placeholder="Ingrese la unidades valorativas">
+
+                      <label for="">promedio aprobacion</label>
+                      <input type="text" id="promedioaprobacion" class="form-control" placeholder="Ingrese el promedio aprobacion">
+
+                      <label for="">numero edificio</label>
+                      <input type="text" id="numero edificio" class="form-control" placeholder="Ingrese el numero edificio">
+                      <hr>
+                      <div id="btnagregarasignatura">
+                       <input type="button" value="Agregar Asignatura" class="btn btn-success" id= "btnagregar" onclick=" AgregarAsignatura()">
+                      
+                      </div>
+
+                       
+                      
+                      
+                      
+                  </form>
+             </div>
+
+        </div>
+
+   </div>
+
+
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
