@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docente</title>
+     <!-- CSS 08:11 --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/JavaScript/Docente.js"></script>
+   <!--JS-->
+</head>
+<body>
+    <div class="container">
+        <div class="consulta mt6">
+             <div class="row">
+                   <div class="col-6">
+                       <h3>
+                          Lista de Docente
+                       </h3>
+                   </div>
+                   <a href="../Home.html"><input type="button" class="btn btn-info" value=" Atras"></a>
+                   
+                   
+                   
+                   <div class="box-body">
+                       <div class="table table-responsive">
+                            <table class="table table-hover">
+                                 <thead>
+                                      <tr>
+                                          <th>Numero Docente</th>
+                                          <th>Nombre</th>
+                                          <th>Apellido</th>
+                                          <th>Fecha Contratacion</th>
+                                          <th>Direccion</th>
+                                          <th>Salario</th>
+                                          <th>Profesión</th>
+                                      </tr>
+                                 </thead>
+                                 <tbody id="DatosDocente">
+                                 
+                                
+                                
+                                
+                                
+                                </tbody>
+                              </table>
+
+                       </div>
+                   </div>
+             </div>
+
+
+
+        </div>
+
+
+        
+        <div id="Formulario" class="Formulario mt6">
+            <div class="rows">
+                 <div class="col-12">
+                       <h3>
+                           Agregar Docente
+                       </h3>
+                 </div>
+             </div>
+             <div class="col-12">
+                  <form id="Miformulario" class = "docente">
+                      <label for="">Numero docente</label>
+                      <input type="text" id="numdocente" class="form-control" placeholder="Ingrese el numero de docente">
+
+                      <label for="">Nombre</label>
+                      <input type="text" id="nombre" class="form-control" placeholder="Ingrese el Nombre">
+
+                      <label for="">Apellido</label>
+                      <input type="text" id="apellido" class="form-control" placeholder="Ingrese el Apellido">
+
+                      <label for="">Fecha de Contratacion</label>
+                       <input type="text" id="fechacontratacion" class="form-control" placeholder="Ingrese la Fecha Contratación">
+
+                      <label for="">Direccion</label>
+                      <input type="text" id="direccion" class="form-control" placeholder="Ingrese la Direccion">
+
+                      <label for="">Salario</label>
+                      <input type="text" id="salario" class="form-control" placeholder="Ingrese el Salario">
+
+                      <label for="">Profesion</label>
+                      <input type="text" id="profesion" class="form-control" placeholder="Ingrese Profesión ">
+                      <hr>
+                      <div id="btnagregardocente">
+                       <input type="button" value="Agregar Docente" class="btn btn-success" id= "btnagregar" onclick=" AgregarDocente()">
+                      
+                      </div>
+                     
+
+
+
+                      
+                  </form>
+             </div>
+
+        </div>
+
+   </div>
+
+
+     
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
